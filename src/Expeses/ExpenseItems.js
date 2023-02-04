@@ -1,13 +1,13 @@
-import { useState } from "react/cjs/react.production.min";
+import { useState } from "react";
 import ExpDate from "./ExpDate";
 
 const ExpenseItems = (props) => {
-  const [title, setTitle] = useState(props.tilte);
+  const [title, setTitle] = useState(props.title);
 
   const clickHandler = () => {
     return setTitle("i am changing you");
   };
-
+  console.log(title);
   return (
     <div>
       <div className="d-flex flex-row h3 shadow  ">
